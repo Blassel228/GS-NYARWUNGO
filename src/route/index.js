@@ -1,14 +1,10 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Header from "@/components/Header.vue";
+import {createRouter, createWebHashHistory} from "vue-router";
 import Home from "@/pages/Home.vue";
 
-const routes = [
-  { path: "/header", component: Header, name: "Header" },
-  { path: "/home", component: Home, name: "Home" },
-];
+const routes = [{ path: "/", component: Home, name: "Home" }];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 
