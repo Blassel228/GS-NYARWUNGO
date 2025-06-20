@@ -7,12 +7,12 @@ import tailwindcss from "@tailwindcss/vite";
 import mkcert from "vite-plugin-mkcert";
 
 export default defineConfig({
-  base: '/G.S-NYARURAMA1/',
+  base: '/GS-NYARWUNGO/',
   plugins: [vue(), vueDevTools(), tailwindcss(), mkcert()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-});
+})
 
